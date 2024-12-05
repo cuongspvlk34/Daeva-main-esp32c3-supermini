@@ -67,8 +67,10 @@ void rpattackSetup(){
     delay(1000);
     u8g2.clearBuffer();
 
- 
+
+ 
   ELECHOUSE_cc1101.setSpiPin(4, 6, 5, 7); // SCK, MOSI, MISO, CSN
+  ELECHOUSE_cc1101.setGDO(21, 20);
   ELECHOUSE_cc1101.Init(); 
   ELECHOUSE_cc1101.SetRx(); 
 
