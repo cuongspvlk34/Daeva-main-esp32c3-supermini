@@ -72,7 +72,9 @@ void about() {
 
 void setup() {
 
-  ELECHOUSE_cc1101.setSpiPin(4, 6, 5, 7); // SCK, MOSI, MISO, CSN
+
+  ELECHOUSE_cc1101.setSpiPin(4, 6, 5, 7); // SCK, MOSI, MISO, CSN
+  ELECHOUSE_cc1101.setGDO(21, 20);
   u8g2.begin();
   u8g2.setBitmapMode(1);
 
